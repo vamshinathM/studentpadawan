@@ -5,7 +5,6 @@
  */
 
 import java.util.Date;
-import java.time.LocalDate;
 
 public class StudentGroup implements StudentArrayOperation  {
 
@@ -53,7 +52,7 @@ public class StudentGroup implements StudentArrayOperation  {
 		Student tmp[]=new Student[students.length+1];
 		tmp[0]=student;
 		for(int i=0;i<students.length;i++)
-			tmp[i]=students[i];
+			tmp[i+1]=students[i];
 		students=tmp;
 	}
 
